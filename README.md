@@ -1,73 +1,120 @@
-# Welcome to your Lovable project
+# Rezumate Frontend
 
-## Project info
+A modern, AI-powered resume builder application that helps users create professional resumes with ease. Built with React, TypeScript, and modern UI components.
 
-**URL**: https://lovable.dev/projects/2367cdb8-b757-4091-90fa-e7c2570a21ce
+## Features
 
-## How can I edit this code?
+- 🎨 **Template Library**: Choose from multiple professional resume templates
+- 📝 **Smart Resume Creation**: Create resumes from scratch with guided forms
+- 🤖 **AI-Powered Tailoring**: Tailor your resume for specific job descriptions
+- 📄 **Resume Upload**: Upload existing resumes and enhance them
+- 👀 **Real-time Preview**: See your changes in real-time
+- 📱 **Responsive Design**: Works perfectly on all devices
+- 🔐 **Authentication**: Secure user authentication and data management
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2367cdb8-b757-4091-90fa-e7c2570a21ce) and start prompting.
+- Node.js 18+ (recommended to use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
+- npm or yarn package manager
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+1. Clone the repository:
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/maddiumashankar/Rezumate-frontend.git
+cd Rezumate-frontend
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies:
+```sh
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build for development
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn-ui components
+│   ├── Footer.tsx
+│   ├── Navbar.tsx
+│   └── ...
+├── pages/              # Application pages
+│   ├── Auth.tsx
+│   ├── Dashboard.tsx
+│   ├── CreateResume.tsx
+│   ├── Templates.tsx
+│   └── ...
+├── hooks/              # Custom React hooks
+├── store/              # Zustand state management
+├── utils/              # Utility functions
+└── lib/                # Library configurations
+```
 
-This project is built with:
+## Tech Stack
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This project is built with modern technologies:
 
-## How can I deploy this project?
+- **Frontend Framework**: React 18 with TypeScript
+- **Build Tool**: Vite for fast development and building
+- **UI Components**: shadcn-ui (Radix UI primitives)
+- **Styling**: Tailwind CSS for utility-first styling
+- **State Management**: Zustand for lightweight state management
+- **HTTP Client**: Axios for API communication
+- **Form Handling**: React Hook Form with Zod validation
+- **Animations**: Framer Motion for smooth animations
+- **Date Handling**: date-fns for date utilities
 
-Simply open [Lovable](https://lovable.dev/projects/2367cdb8-b757-4091-90fa-e7c2570a21ce) and click on Share -> Publish.
+## Development
 
-## Can I connect a custom domain to my Lovable project?
+### Code Style
 
-Yes, you can!
+This project uses ESLint for code linting. Make sure to run `npm run lint` before committing changes.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Contributing
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## Deployment
+
+The application can be deployed to various platforms:
+
+- **Vercel**: Connect your GitHub repository for automatic deployments
+- **Netlify**: Deploy directly from your git repository
+- **GitHub Pages**: Use the build output for static hosting
+
+To build for production:
+```sh
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+## License
+
+This project is private and proprietary.
+
+## Support
+
+For support, please contact the development team or create an issue in the repository.
